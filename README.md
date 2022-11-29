@@ -190,17 +190,13 @@ vim ~/.bashrc
      
    # Clone yolov5 Repositories and make it Compatible with Jetson Nano.
    
-   cd
-     git clone https://github.com/ultralytics/yolov5.git
-     cd yolov5/
+         cd
+          git clone https://github.com/ultralytics/yolov5.git
+          cd yolov5/
       
-     sudo pip3 install numpy==1.19.4
-     history
-     ##################### comment torch,PyYAML and torchvision in requirement.txt##################################
-     sudo pip3 install --ignore-installed PyYAML>=5.3.1
-     sudo pip3 install -r requirements.txt
-     sudo python3 detect.py
-     sudo python3 detect.py --weights yolov5s.pt --source 0
+          sudo pip3 install numpy==1.19.4
+          history
+    
      
    
  # Flag Dataset Training
