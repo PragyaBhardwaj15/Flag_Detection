@@ -220,9 +220,23 @@ source '0' for webcam
 ➢ Just place the viewfinder showing the Flag on screen and it will detect it and shows the name of the name of the country the flag belongs to.
 
 
+# Future Scope
+
+• As we know technology is marching towards automation, so this project is one of the step towards automation.
+• Thus, for more accurate results it needs to be trained for more images, and for a greater number of epochs.
+• 
+
+
 # Conclusion
 
 Some remarkable results have been obtained as a result of investigating the meanings and the reasons behind the use flags utilized as symbols of countries and designed with various symbols and colors. Investigating the meaning of country flags shows that majority of them include geographical elements. Nations have replaced in their flags the physical and human geography elements that are important for them. Most of the world countries (86%) include elements related to geographical characteristics. The dominant elements in the natural and human environmental conditions have been emphasized in flags. Flags help us to perceive the geographical characteristics of the countries. Disciplines other than geography may contribute to science by undertaking research about flags as well.
+
+
+# Reference
+
+1] Roboflow:- https://roboflow.com
+
+2] Google images
 
      
 
