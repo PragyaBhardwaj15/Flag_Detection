@@ -198,7 +198,7 @@ Download weights and Test Yolov5 Installation on USB webcam
    
  # Flag Dataset Training
  
-#We used Google Colab And Roboflow
+# We used Google Colab And Roboflow
 
 train your model on colab and download the weights and past them into yolov5 folder link of project.
 
