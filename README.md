@@ -113,28 +113,28 @@ This Module is divided into two parts:
 • YOLOv5 was used to train and test our model for various classes like India,france,italy,russia,japan,canada etc. We trained it for 150 epochs and achieved an accuracy of approximately 92%.
 
 
+# Setup
+
 # Installation
 
 Initial Setup
 
-Remove unwanted Applications
+Remove unwanted Applications.
 
-sudo apt-get remove --purge libreoffice*
-sudo apt-get remove --purge thunderbird*
-
-# Create Swap file
-
-sudo fallocate -l 10.0G /swapfile1
-sudo chmod 600 /swapfile1
-sudo mkswap /swapfile1
-sudo vim /etc/fstab
+      sudo apt-get remove --purge libreoffice*
+      sudo apt-get remove --purge thunderbird*
 
 
-#################add line###########
-/swapfile1 swap swap defaults 0 0
+ Create Swap file
+      sudo fallocate -l 10.0G /swapfile1
+      sudo chmod 600 /swapfile1
+      sudo mkswap /swapfile1
+      sudo vim /etc/fstab
+      
+      #################add line###########
+      /swapfile1 swap swap defaults 0 0
 
-
-# Cuda Configuration
+Cuda Configuration
 
 vim ~/.bashrc
      
@@ -149,54 +149,51 @@ vim ~/.bashrc
      source ~/.bashrc
      
      
-   # Udpate a System
-   
-   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-     
-     sudo python3 get-pip.py
-     
-     sudo apt-get install libopenblas-base libopenmpi-dev
-     
-     sudo apt-get install python3-dev build-essential autoconf libtool pkg-config python-opengl
-     python-pil python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer
-     libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-
-     qt4 python-qt4-gl libgle3 python-dev libssl-dev libpq-dev python-dev libxml2-dev libxslt1-
-     dev libldap2-dev libsasl2-dev libffi-dev libfreetype6-dev python3-dev
-     
-     vim ~/.bashrc
-     
-     ####################### add line ####################
+  Update & Upgrade
 
-     export OPENBLAS_CORETYPE=ARMV8
+        sudo apt-get update
+        sudo apt-get upgrade
      
-     source ~/.bashrc
-     
-     sudo pip3 install pillow
-     
-     curl -LO https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
-     
-     mv p57jwntv436lfrd78inwl7iml6p13fzh.whl torch-1.8.0-cp36-cp36m-linux_aarch64.whl
-     
-     sudo pip3 install torch-1.8.0-cp36-cp36m-linux_aarch64.whl
-     
-     sudo python3 -c "import torch; print(torch.cuda.is_available())"
-     
-    
-   # Installation of torchvision
+  Install some required Packages
+
+        sudo apt install curl
+        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+        sudo python3 get-pip.py
+        sudo apt-get install libopenblas-base libopenmpi-dev
+
+        sudo pip3 install pillow
+        
+ Install Torch
+
+         curl -LO https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
+         mv p57jwntv436lfrd78inwl7iml6p13fzh.whl torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+         sudo pip3 install torch-1.8.0-cp36-cp36m-linux_aarch64.whl
+
+         #Check Torch, output should be "True" 
+         sudo python3 -c "import torch; print(torch.cuda.is_available())
+         
+   Installation of torchvision
    
-   git clone --branch v0.9.1 https://github.com/pytorch/vision torchvision
-     cd torchvision/
-     sudo python3 setup.py install
+          git clone --branch v0.9.1 https://github.com/pytorch/vision torchvision
+          cd torchvision/
+          sudo python3 setup.py install
      
-   # Clone yolov5 Repositories and make it Compatible with Jetson Nano.
-   
-         cd
+  Clone Yolov5
+
           git clone https://github.com/ultralytics/yolov5.git
           cd yolov5/
-      
           sudo pip3 install numpy==1.19.4
-          history
-    
+
+          #comment torch,PyYAML and torchvision in requirement.txt
+
+          sudo pip3 install --ignore-installed PyYAML>=5.3.1
+          sudo pip3 install -r requirements.txt
+          
+Download weights and Test Yolov5 Installation on USB webcam
+
+          sudo python3 detect.py
+          sudo python3 detect.py --weights yolov5s.pt  --source 0
+
      
    
  # Flag Dataset Training
