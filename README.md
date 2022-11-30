@@ -212,13 +212,13 @@ source '0' for webcam
 
 # Advantages
 
-➢ The Floor detection system will be of great advantage where a user has lack of time, motivation, unwell or differently abled.
+➢ There are Total 195 countries in the whole world and with 195 Countries there are 195 different types of flags of Different shapes,size,colors and symbols.
+   It is very much difficult for a peoples to remember this all these flags that the flag belongs to whic country, so it is very Usefull model for detecting flag.
 
-➢ It will be useful to users who are very busy because of work or are because of prior schedules.
+➢It is very usefull for  tourist and many peoples.
 
-➢ Just place the viewfinder showing the Floor on screen and it will detect it.
+➢ Just place the viewfinder showing the Flag on screen and it will detect it and shows the name of the name of the country the flag belongs to.
 
-➢ It will be faster to just then clean floor using minimal or very less workforce.
      
 
 
