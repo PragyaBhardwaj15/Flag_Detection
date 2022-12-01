@@ -56,7 +56,16 @@ To create a Flag detection system which will detect the flag and  recommended th
 
 • Historically, flags originated as military standards, used as field signs. 
 
-• Flags that are regarded as the symbols of countries incorporate many colors, symbols, coats of arms and emblems. Each color, symbol, coat of arms and emblem used in flags has a specific meaning. Nations present their social and cultural values (such as Patriotism, Solidarity, Honesty, Altruism, Humanism, Optimism, Tolerance, Harmony, Dignity, Fervor, Loyalty, Heroism, Wisdom, Generosity, Nobility, Virtuousness, Purity)
+• Flags that are regarded as the symbols of countries incorporate many colors, symbols, coats of arms and emblems. Each color, symbol, coat of arms and emblem used in flags has a specific meaning. Nations present their social and cultural values (such as Patriotism, Solidarity, Honesty, Altruism, 
+Humanism, Optimism, Tolerance, Harmony, Dignity, Fervor, Loyalty, Heroism, Wisdom, Generosity, Nobility, Virtuousness, Purity)
+
+# Jetson Nano
+
+
+
+![nano_img01](https://user-images.githubusercontent.com/101381723/205018250-2a59e53c-0e75-47a2-acb0-f8cf461bc7bd.jpg)
+
+
 
 # Jetson Nano Compatibility
 
@@ -208,6 +217,16 @@ train your model on colab and download the weights and past them into yolov5 fol
 source '0' for webcam
 
 !python detect.py --weights best.pt --img 416 --conf 0.1 --source 0
+
+# Demo 
+
+
+
+
+https://user-images.githubusercontent.com/101381723/205018079-762eea99-ba8e-4884-8132-44287be96a76.mp4
+
+
+
 
 
 # Advantages
