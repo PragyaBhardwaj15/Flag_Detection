@@ -221,9 +221,7 @@ source '0' for webcam
 # Demo 
 
 
-
-
-     https://user-images.githubusercontent.com/101381723/205018079-762eea99-ba8e-4884-8132-44287be96a76.mp4
+https://user-images.githubusercontent.com/101381723/205018079-762eea99-ba8e-4884-8132-44287be96a76.mp4
 
 
 
